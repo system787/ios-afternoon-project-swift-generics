@@ -14,7 +14,7 @@ Create a new playground or project to develop and test your type. It may be easi
 
 ## Conform to `ExpressibleByArrayLiteral`
 
-Conform your set to `ExpressibleByArrayLiteral` so you can initialize a counted set using an array of same-type items. You can explore [Apple's documentation](https://developer.apple.com/documentation/swift/expressiblebyarrayliteral) to find what this protocol requires.
+Conform your set to `ExpressibleByArrayLiteral` so you can initialize a counted set using an array of same-type items. You can explore [Apple's documentation for the protocol](https://developer.apple.com/documentation/swift/expressiblebyarrayliteral) to see what its implementation requires.
 
 Your implementation should support the following interaction style:
 
