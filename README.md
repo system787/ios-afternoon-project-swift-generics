@@ -14,7 +14,7 @@ Create a new playground or project to develop and test your type. It may be easi
 
 ## Conform to `ExpressibleByArrayLiteral`
 
-As demonstrated in class, conform your set to `ExpressibleByArrayLiteral` so you can initialize a counted set using an array of same-type items.
+Conform your set to `ExpressibleByArrayLiteral` so you can initialize a counted set using an array of same-type items. You can explore [Apple's documentation for the protocol](https://developer.apple.com/documentation/swift/expressiblebyarrayliteral) to see what its implementation requires.
 
 Your implementation should support the following interaction style:
 
@@ -32,7 +32,7 @@ myCountedSet.remove(.magic) // 0
 ## Test
 1. Run the project and make sure everything works. Create a good suite of tests that check for boundary conditions and many different types.
 2. If anything doesn't work the way the above example shows, go back and debug your issues.
-3. As always, if you need help, follow the 20-minute rule, then ask your PM.
+3. As always, if you need help, follow the 20-minute rule, then ask your TL.
 
 ## Go Farther
 
