@@ -6,15 +6,15 @@ struct CountedSet<Element: Hashable>: ExpressibleByArrayLiteral {
     
     private (set) var dict = [Element : Int]()
     
-    var count: Int {
-        return dict.count
+    var count: Any {
+        return (dict.count > 0 ? dict.count : dict.isEmpty)
     }
     
     mutating func insert(_ element: Element) {
         if let _ = dict[element] {
             dict[element]! += 1
         } else {
-            dict[element]! = 0
+            dict[element] = 0
         }
     }
     
@@ -33,8 +33,10 @@ struct CountedSet<Element: Hashable>: ExpressibleByArrayLiteral {
         return 0
     }
     
-    init(arrayLiteral: Element...) {
-        self.init()
+    init(arrayLiteral elements: Element...) {
+        for element in elements {
+            insert(element)
+        }
     }
 }
 
